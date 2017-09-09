@@ -1,5 +1,6 @@
 import React from 'react';
-import '../../style/footer.less'
+import 'Styles/footer.less';
+import ClickableIcon from 'Components/ClickableIcon.jsx'
 
 export default class Footer extends React.Component {
   constructor(props) {
@@ -9,6 +10,9 @@ export default class Footer extends React.Component {
     }
   }
 
+  click() {
+    console.log("click footer")
+  }
   render() {
     window.addEventListener('scroll', (event) => {
       let distance = event.srcElement.body.scrollTop;
@@ -24,14 +28,17 @@ export default class Footer extends React.Component {
     });
 
     const styles = {
-      'zIndex': this.state.show ? '-10' : '-30',
+      // 'zIndex': this.state.show ? '-5' : '-15',
     }
 
     return (
-      <div className='footer' style={styles}>
+      <footer className='footer_' style={styles} onClick={this.click}>
+        hello
+        {/* <div>
+        <ClickableIcon url='https://github.com/jayychang' icon={require('Assets/icons/github-icon.png')} />
         <p>hello hello hello hello hello hello hello hello hello hello hello </p>
-        <p>hello hello hello hello hello hello hello hello hello hello hello </p>
-      </div>
+        </div> */}
+      </footer>
     );
   }
 }

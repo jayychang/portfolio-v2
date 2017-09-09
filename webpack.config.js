@@ -21,8 +21,21 @@ module.exports = {
     loaders: [
       { test: /\.jsx?$/, loader: 'babel-loader', exclude: /node_modules/ },
       { test: /\.less$/, loader: [ 'style-loader', 'css-loader', 'less-loader' ] },
-      { test: /\.(png|otf)$/, loader: 'url-loader' },
+      { test: /\.(jpg|png|otf)$/, loader: 'url-loader' },
     ],
+  },
+  resolve: {
+      alias: {
+        Assets: path.resolve(__dirname, 'source/public/assets'),
+        Components: path.resolve(__dirname, 'source/public/ui/components'),
+        Styles: path.resolve(__dirname, 'source/public/styles'),
+        Templates: path.resolve(__dirname, 'source/public/templates'),
+        Views: path.resolve(__dirname, 'source/public/ui/views'),
+      },
+      // path.resolve('node_modules'),
+      // path.resolve('./source/public/assets'),
+      // path.resolve('./source/public'),
+      // path.resolve('./source/public/ui/'),
   },
   plugins: [HtmlWebpackPluginConfig],
 }

@@ -3,13 +3,13 @@ import React from 'react';
 export default class Content extends React.Component {
   render() {
     const styles = {
-      'backgroundColor': 'grey',
-      'height': '1000px',
-      'marginBottom': '200px',
+      // 'backgroundColor': 'grey',
+      // 'height': '5000px',
+      // 'width': '5000px',
     }
 
     return (
-      <div style={styles} />
+      <div className="content_" />
     );
   }
 }
