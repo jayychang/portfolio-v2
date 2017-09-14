@@ -37,7 +37,7 @@ export default class Footer extends React.Component {
       <footer>
         {!this.state.isHidden && <FooterContent />}
       </footer>
-    )
+    );
   }
 }
 
@@ -59,6 +59,6 @@ class FooterContent extends React.Component {
           </div>
         </div>
       </div>
-    )
+    );
   }
 }

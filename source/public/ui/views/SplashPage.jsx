@@ -21,6 +21,6 @@ export default class SplashPage extends React.Component {
           </div>
         </div>
       </header>
-    )
+    );
   }
 }

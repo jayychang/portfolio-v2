@@ -1,7 +1,3 @@
-/*
-    ./webpack.config.js
-*/
-
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
@@ -25,13 +21,13 @@ module.exports = {
     ],
   },
   resolve: {
-      alias: {
-        Assets: path.resolve(__dirname, 'source/public/assets'),
-        Components: path.resolve(__dirname, 'source/public/ui/components'),
-        Styles: path.resolve(__dirname, 'source/public/styles'),
-        Templates: path.resolve(__dirname, 'source/public/templates'),
-        Views: path.resolve(__dirname, 'source/public/ui/views'),
-      },
+    alias: {
+      Assets: path.resolve(__dirname, 'source/public/assets'),
+      Components: path.resolve(__dirname, 'source/public/ui/components'),
+      Styles: path.resolve(__dirname, 'source/public/styles'),
+      Templates: path.resolve(__dirname, 'source/public/templates'),
+      Views: path.resolve(__dirname, 'source/public/ui/views'),
+    },
   },
   plugins: [HtmlWebpackPluginConfig],
 }
