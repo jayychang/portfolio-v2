@@ -23,9 +23,7 @@ export default class ClickableIcon extends React.Component {
     }
 
     return (
-      <div>
-        <img style={styles} onClick={this.openNew} src={this.props.icon} />
-      </div>
+      <img style={styles} onClick={this.openNew} src={this.props.icon} />
     );
   }
 }
