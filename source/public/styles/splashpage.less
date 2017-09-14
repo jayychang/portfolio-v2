@@ -1,4 +1,5 @@
-@sliderBottomPadding: 150px;
+@scrollArrowBottomPadding: 80px;
+@minSplashHeight: 500px;
 
 .splashpage_ {
   width: 100%;
@@ -7,6 +8,20 @@
   top: 0;
   background-color: white;
 }
+
+.content_ {
+  margin-top: 100vh;
+}
+
+/* This is to set a minimum height margin */
+// @media screen and ( max-height: @minSplashHeight ){
+//   .splashpage_{
+//     height: @minSplashHeight !important;
+//   }
+//   .content_ {
+//     margin-top: @minSplashHeight !important;
+//   }
+// }
 
 .typed-container {
   position: absolute;
@@ -18,11 +33,10 @@
 }
 
 .scrolll-arrow {
-  position: relative;
-  bottom: @sliderBottomPadding;
+  position: absolute;
+  top: -@scrollArrowBottomPadding;
   left: 50%;
   transform: translateX(-50%);
-  // text-align: center;
 }
 
 .typed-text {
@@ -37,10 +51,6 @@
   -moz-animation: blink 0.6s infinite;
   animation: blink 0.6s infinite;
   animation-direction: alternate;
-}
-
-.content_ {
-  margin-top: 100vh;
 }
 
 @keyframes blink {

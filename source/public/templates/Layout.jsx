@@ -7,16 +7,16 @@ export default class Layout extends React.Component {
   render() {
     return (
       <div>
-      <div className="layout_">
-        <div className="background_">
-          <SplashPage />
-          <Footer />
-        </div>
-        <div className="foreground_">
-          <Content />
+        <div className="layout_">
+          <div className="background_">
+            <SplashPage />
+            <Footer />
+          </div>
+          <div className="foreground_">
+            <Content />
+          </div>
         </div>
       </div>
-    </div>
     );
   }
 }

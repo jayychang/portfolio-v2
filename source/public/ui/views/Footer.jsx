@@ -21,16 +21,14 @@ export default class Footer extends React.Component {
 
   handleScroll(event) {
     let distance = event.srcElement.body.scrollTop;
-    if (distance < 400 && this.state.isHidden === false) {
-      console.log("false");
+    if (distance < 600 && this.state.isHidden === false) {
       this.setState({
         isHidden: true,
       });
-    } else if (distance > 400 && this.state.isHidden === true){
+    } else if (distance > 600 && this.state.isHidden === true){
       this.setState({
         isHidden: false,
       });
-      console.log("true");
     }
   }
 
@@ -39,7 +37,7 @@ export default class Footer extends React.Component {
       <footer>
         {!this.state.isHidden && <FooterContent />}
       </footer>
-    );
+    )
   }
 }
 
@@ -47,7 +45,19 @@ class FooterContent extends React.Component {
   render() {
     return (
       <div className='footer_'>
-        <ClickableIcon url='https://github.com/jayychang' icon={require('Assets/icons/github-icon.png')} />
+        <div className='footer-content'>
+          <div className='flex-container'>
+            <div className='flex-item'>
+              <ClickableIcon url='https://github.com/jayychang' icon={require('Assets/icons/github-icon.png')} />
+            </div>
+            <div className='flex-item'>
+              <ClickableIcon url='https://www.linkedin.com/in/jaychanggg/' icon={require('Assets/icons/linkedin-icon.png')} />
+            </div>
+            <div className='flex-item'>
+              <ClickableIcon url='mailto:jaychanggg@gmail.com' icon={require('Assets/icons/email-icon.png')} />
+            </div>
+          </div>
+        </div>
       </div>
     )
   }

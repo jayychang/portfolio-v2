@@ -7,14 +7,19 @@ export default class ClickableIcon extends React.Component {
   }
 
   openNew() {
-    window.open(this.props.url);
-    console.log("clicked");
-  };
+    const link = this.props.url;
+    if (/^mailto:/.test(link)) {
+      window.location = link;
+    } else {
+      window.open(link);
+    }
+  }
 
   render() {
     const styles = {
       'height': '64px',
-      'margin': '38px auto',
+      'margin': 'auto',
+      'cursor': 'pointer',
     }
 
     return (
