@@ -1,6 +1,11 @@
 import React from 'react';
 
 export default class ClickableIcon extends React.Component {
+  constructor(props) {
+    super(props);
+    this.openNew = this.openNew.bind(this);
+  }
+
   openNew() {
     window.open(this.props.url);
     console.log("clicked");

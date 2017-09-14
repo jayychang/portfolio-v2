@@ -32,10 +32,6 @@ module.exports = {
         Templates: path.resolve(__dirname, 'source/public/templates'),
         Views: path.resolve(__dirname, 'source/public/ui/views'),
       },
-      // path.resolve('node_modules'),
-      // path.resolve('./source/public/assets'),
-      // path.resolve('./source/public'),
-      // path.resolve('./source/public/ui/'),
   },
   plugins: [HtmlWebpackPluginConfig],
 }

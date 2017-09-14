@@ -1,22 +1,21 @@
 @footerHeight: 200px;
+@footerContent: 500px;
 
-.footer_ {
-  // height: @footerHeight;
-  // position: relative;
+footer {
+  position: relative;
 }
 
-.footer {
+.footer_ {
   width: 100%;
-  height: @footerHeight;
+  height: @footerContent;
   position: fixed;
-  height: 500px;
-  bottom: (@footerHeight - 500px);
+  bottom: @footerHeight - @footerContent;
   background-image: url('../assets/images/clouds.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
-// .splashpage_ {
-//   z-index: -10;
-// }
+.content_ {
+  margin-bottom: @footerHeight;
+}
