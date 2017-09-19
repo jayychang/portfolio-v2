@@ -1,0 +1,18 @@
+@navbarHeight: 80px;
+
+#navbar_ {
+  background-color: blue;
+  height: @navbarHeight;
+  width: 100%;
+  z-index: 990;
+  position: absolute;
+
+  &.sticky {
+    top: 0 !important;
+    position: fixed !important;
+  }
+}
+
+#content_ {
+  padding-top: @navbarHeight;
+}

@@ -8,19 +8,17 @@ export default class SplashPage extends React.Component {
       strings:['Jay Chang :)'],
       startDelay: 400,
       backDelay: 3600,
-      loop: true
+      loop: true,
     });
   }
 
   render() {
     return (
-      <header>
-        <div className='splashpage_' onClick={this.click}>
-          <div className='typed-container'>
-            <div><span className='typed-text' ref='typed' /></div>
-          </div>
+      <div id="splashpage_">
+        <div className="typed-container">
+          <div><span className="typed-text" ref="typed" /></div>
         </div>
-      </header>
+      </div>
     );
   }
 }

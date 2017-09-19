@@ -1,13 +1,14 @@
 import React from 'react';
 import ScrollArrow from 'Components/ScrollArrow.jsx';
+import 'Styles/content.less';
 
 export default class Content extends React.Component {
   render() {
     return (
-      <div>
+      <div id="content_">
         <ScrollArrow />
-        <div className="content_">
-          hello
+        <div >
+          CONTENT
         </div>
       </div>
     );

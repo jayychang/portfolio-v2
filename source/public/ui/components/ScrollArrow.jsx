@@ -4,7 +4,7 @@ export default class ScrollArrow extends React.Component {
   render() {
     const styles = {
       'position': 'absolute',
-      'top': '-80px',
+      'top': '-100px',
       'left': '50%',
       'transform': 'translateX(-50%)',
     }

@@ -1,6 +1,6 @@
 import React from 'react';
 import 'Styles/footer.less';
-import ClickableIcon from 'Components/ClickableIcon.jsx'
+import ClickableIcon from 'Components/ClickableIcon.jsx';
 
 export default class Footer extends React.Component {
   constructor(props) {
@@ -21,11 +21,11 @@ export default class Footer extends React.Component {
 
   handleScroll(event) {
     let distance = event.srcElement.body.scrollTop;
-    if (distance < 600 && this.state.isHidden === false) {
+    if (distance < 1000 && this.state.isHidden === false) {
       this.setState({
         isHidden: true,
       });
-    } else if (distance > 600 && this.state.isHidden === true){
+    } else if (distance > 1000 && this.state.isHidden === true){
       this.setState({
         isHidden: false,
       });
@@ -44,17 +44,17 @@ export default class Footer extends React.Component {
 class FooterContent extends React.Component {
   render() {
     return (
-      <div className='footer_'>
-        <div className='footer-content'>
-          <div className='flex-container'>
-            <div className='flex-item'>
-              <ClickableIcon url='https://github.com/jayychang' icon={require('Assets/icons/github-icon.png')} />
+      <div id="footer_">
+        <div className="footer-content">
+          <div className="flex-container">
+            <div className="flex-item">
+              <ClickableIcon url='https://github.com/jayychang' icon={require("Assets/icons/github-icon.png")} />
             </div>
-            <div className='flex-item'>
-              <ClickableIcon url='https://www.linkedin.com/in/jaychanggg/' icon={require('Assets/icons/linkedin-icon.png')} />
+            <div className="flex-item">
+              <ClickableIcon url='https://www.linkedin.com/in/jaychanggg/' icon={require("Assets/icons/linkedin-icon.png")} />
             </div>
-            <div className='flex-item'>
-              <ClickableIcon url='mailto:jaychanggg@gmail.com' icon={require('Assets/icons/email-icon.png')} />
+            <div className="flex-item">
+              <ClickableIcon url='mailto:jaychanggg@gmail.com' icon={require("Assets/icons/email-icon.png")} />
             </div>
           </div>
         </div>

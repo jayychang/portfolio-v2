@@ -1,26 +1,24 @@
 @footerHeight: 200px;
-@footerContent: 500px;
+@footerTopMargin: 250px;
+@footerBottomMargin: 250px;
+@sideMarginIconContainer: 20%;
 
-footer {
-  position: relative;
-}
-
-.footer_ {
+#footer_ {
   width: 100%;
-  height: @footerContent;
+  height: @footerHeight + @footerTopMargin + @footerBottomMargin;
   position: fixed;
-  bottom: @footerHeight - @footerContent;
+  bottom: -@footerBottomMargin;
   background-image: url('../assets/images/clouds.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
-.content_ {
+#content_ {
   margin-bottom: @footerHeight;
 }
 
 .footer-content {
   height: @footerHeight;
-  margin: auto 20%;
+  margin: @footerTopMargin @sideMarginIconContainer auto @sideMarginIconContainer;
 }
