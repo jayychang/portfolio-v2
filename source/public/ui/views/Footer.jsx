@@ -1,6 +1,7 @@
 import React from 'react';
 import 'Styles/footer.less';
 import ClickableIcon from 'Components/ClickableIcon.jsx';
+import icons from 'Templates/footer_icons_template.js';
 
 export default class Footer extends React.Component {
   constructor(props) {
@@ -47,15 +48,9 @@ class FooterContent extends React.Component {
       <div id="footer_">
         <div className="footer-content">
           <div className="flex-container">
-            <div className="flex-item">
-              <ClickableIcon url='https://github.com/jayychang' icon={require("Assets/icons/github-icon.png")} />
-            </div>
-            <div className="flex-item">
-              <ClickableIcon url='https://www.linkedin.com/in/jaychanggg/' icon={require("Assets/icons/linkedin-icon.png")} />
-            </div>
-            <div className="flex-item">
-              <ClickableIcon url='mailto:jaychanggg@gmail.com' icon={require("Assets/icons/email-icon.png")} />
-            </div>
+            { icons.map((icon, i) =>
+              <ClickableIcon key={i} url={icon.url} icon={icon.icon} />
+            )}
           </div>
         </div>
       </div>

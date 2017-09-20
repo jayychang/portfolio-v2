@@ -17,13 +17,14 @@ module.exports = {
     loaders: [
       { test: /\.jsx?$/, loader: 'babel-loader', exclude: /node_modules/ },
       { test: /\.less$/, loader: [ 'style-loader', 'css-loader', 'less-loader' ] },
-      { test: /\.(jpg|png|otf)$/, loader: 'url-loader' },
+      { test: /\.(jpg|png|otf)$/, loader: 'url-loader', options: { limit: 10000 } },
     ],
   },
   resolve: {
     alias: {
       Assets: path.resolve(__dirname, 'source/public/assets'),
       Components: path.resolve(__dirname, 'source/public/ui/components'),
+      Layouts: path.resolve(__dirname, 'source/public/layouts'),
       Styles: path.resolve(__dirname, 'source/public/styles'),
       Templates: path.resolve(__dirname, 'source/public/templates'),
       Views: path.resolve(__dirname, 'source/public/ui/views'),
