@@ -1,6 +1,6 @@
 @splashPageHeight: 100vh;
 @scrollArrowBottomPadding: 80px;
-// @minSplashHeight: 500px;
+@minSplashHeight: 500px;
 
 #splashpage_ {
   width: 100%;
@@ -15,14 +15,14 @@
 }
 
 /* This is to set a minimum height for SplashPage */
-// @media screen and ( max-height: @minSplashHeight ){
-//   .splashpage_{
-//     height: @minSplashHeight !important;
-//   }
-//   .content_ {
-//     margin-top: @minSplashHeight !important;
-//   }
-// }
+@media screen and ( max-height: @minSplashHeight ){
+  .splashpage_{
+    height: @minSplashHeight !important;
+  }
+  .content_ {
+    margin-top: @minSplashHeight !important;
+  }
+}
 
 .typed-container {
   position: absolute;

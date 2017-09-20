@@ -1,15 +1,29 @@
 @navbarHeight: 80px;
 
 #navbar_ {
-  background-color: blue;
   height: @navbarHeight;
   width: 100%;
   z-index: 990;
   position: absolute;
+  background-image: url('../assets/images/clouds.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: white;
 
   &.sticky {
     top: 0 !important;
     position: fixed !important;
+  }
+}
+
+.navItem {
+  transition: margin 700ms;
+  margin: 0;
+
+  &.inView {
+    font-weight: bold;
+    margin: auto 12% !important;
   }
 }
 

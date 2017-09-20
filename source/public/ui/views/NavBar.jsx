@@ -1,5 +1,6 @@
 import React from 'react';
 import 'Styles/navbar.less';
+import Navigation from 'Components/Navigation.jsx';
 
 export default class NavBar extends React.Component {
   constructor(props) {
@@ -36,7 +37,7 @@ export default class NavBar extends React.Component {
   render() {
     return (
       <nav id="navbar_" className={ this.state.sticky ? "sticky" : null }>
-        NAVBAR
+        <Navigation />
       </nav>
     );
   }

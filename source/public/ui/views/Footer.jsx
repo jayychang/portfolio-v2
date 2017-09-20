@@ -36,7 +36,7 @@ export default class Footer extends React.Component {
   render() {
     return (
       <footer>
-        {!this.state.isHidden && <FooterContent />}
+        { !this.state.isHidden && <FooterContent /> }
       </footer>
     );
   }
