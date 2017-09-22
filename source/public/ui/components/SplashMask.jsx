@@ -20,7 +20,7 @@ export default class SplashMask extends React.Component {
   handleScroll(event) {
     let scroll = event.srcElement.body.scrollTop;
     let maxScroll = document.querySelector('#splashpage_').offsetHeight;
-    if (scroll < maxScroll - 300) {
+    if (scroll < maxScroll) {
       this.setState({
         iconSize: 80 + 300*(scroll/maxScroll),
       });
@@ -31,9 +31,7 @@ export default class SplashMask extends React.Component {
     const styles = {
       'width': '100vw',
       'height': '100vh',
-      'zIndex': '20',
       'position': 'absolute',
-      'top': '0',
     }
 
     return (

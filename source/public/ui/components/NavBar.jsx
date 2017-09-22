@@ -5,7 +5,7 @@ import Navigation from 'Views/Navigation.jsx';
 export default class NavBar extends React.Component {
   render() {
     return (
-      <div className="sticky_aligner">
+      <div className="nav sticky_aligner">
         <div className="sticky_content">
           <nav id="navbar_">
             <Navigation />

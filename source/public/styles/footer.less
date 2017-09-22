@@ -1,10 +1,10 @@
 @footerHeight: 180px;
 @footerTopMargin: 250px;
 @footerBottomMargin: 250px;
-@sideMarginIconContainer: 20%;
+@sidePaddingIconContainer: 20%;
 
 #footer_ {
-  width: 100%;
+  width: 100vw;
   height: @footerHeight + @footerTopMargin + @footerBottomMargin;
   position: fixed;
   bottom: -@footerBottomMargin;
@@ -15,7 +15,8 @@
 
   .footer-content {
     height: @footerHeight;
-    margin: @footerTopMargin @sideMarginIconContainer auto @sideMarginIconContainer;
+    margin-top: @footerTopMargin;
+    padding: 0 @sidePaddingIconContainer;
   }
 }
 

@@ -3,22 +3,23 @@
 @minSplashHeight: 500px;
 
 #splashpage_ {
-  width: 100%;
+  width: 100vw;
   height: @splashScrollHeight;
   position: relative;
-  top: 0;
-  left: 0;
-  background-color: green;
   min-height: @minSplashScollHeight;
+
+  &>.splash.sticky_aligner {
+    height: 100vh;
+  }
 
   .typed-container {
     position: absolute;
-    top: 0;
     height: 100vh;
     width: 100vw;
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: -10;
   }
 
   .typed-text {

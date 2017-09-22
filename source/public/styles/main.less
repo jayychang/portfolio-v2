@@ -11,13 +11,15 @@
 }
 
 body {
-  max-width: 100%;
+  width: 100vw;
+  height: 100%;
   margin: 0;
   padding: 0;
   font-family: 'Dosis', sans-serif;
   font-weight: normal;
   font-size: 2em;
-  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 #layout_ {
@@ -25,9 +27,9 @@ body {
 }
 
 #content_ {
-  width: 100%;
+  width: 100vw;
   position: relative;
-  z-index: 99;
+  z-index: 100;
 }
 
 .sticky_aligner {
@@ -38,7 +40,8 @@ body {
 
 .sticky_content {
   position: absolute;
-  top: 0;
+  height: 100%;
+  width: 100%;
 }
 
 .flex-container {
@@ -51,4 +54,8 @@ body {
 .flex-item {
   flex-grow: 1;
   text-align: center;
+}
+
+.hidden {
+  visibility: hidden;
 }

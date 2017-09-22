@@ -1,5 +1,4 @@
 import React from 'react';
-import ScrollArrow from 'Components/ScrollArrow.jsx';
 import NavBar from 'Components/NavBar.jsx';
 import Work from 'Views/Work.jsx';
 import Projects from 'Views/Projects.jsx';
@@ -16,11 +15,12 @@ export default class Content extends React.Component {
     return (
       <div id="content_">
         <NavBar />
-        <ScrollArrow />
-        <Work />
-        <Projects />
-        <Skills />
-        <AboutMe />
+        <div className="main_content">
+          <Work />
+          <Projects />
+          <Skills />
+          <AboutMe />
+        </div>
       </div>
     );
   }

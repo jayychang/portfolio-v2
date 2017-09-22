@@ -7,7 +7,7 @@ export default class ScrollArrow extends React.Component {
     let navbarHeight = document.querySelector('#navbar_').clientHeight;
     let difference = navbarHeight - scroll;
     if (difference > 0) {
-      animateScroll.scrollMore(difference, {duration: 500});
+      animateScroll.scrollMore(difference, { duration: 500 });
     }
   }
 

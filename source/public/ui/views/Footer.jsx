@@ -38,8 +38,8 @@ export default class Footer extends React.Component {
 
   render() {
     return (
-      <footer>
-        { !this.state.isHidden && <FooterContent /> }
+      <footer className={this.state.isHidden? "hidden" : null}>
+        <FooterContent />
       </footer>
     );
   }

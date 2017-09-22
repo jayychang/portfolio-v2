@@ -15,18 +15,23 @@ export default class SplashPage extends React.Component {
   }
 
   scrollToNav() {
-    let scroll = document.body.scrollTop;
+    let navbarDistance = document.querySelector('#navbar_').getBoundingClientRect().top;
     let navbarHeight = document.querySelector('#navbar_').clientHeight;
-    let difference = navbarHeight - scroll;
+    let screenHeight = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+    let difference = navbarDistance + navbarHeight - screenHeight;
     if (difference > 0) {
       animateScroll.scrollMore(difference, { duration: 500 });
     }
   }
 
   render() {
+    const styles = {
+      'backgroundColor': 'green',
+    }
+
     return (
-      <div id="splashpage_" onClick={this.scrollToNav}>
-        <div className="sticky_aligner">
+      <div id="splashpage_" style={styles} onClick={this.scrollToNav}>
+        <div className="splash sticky_aligner">
           <div className="sticky_content">
             <SplashMask />
             <div className="typed-container">
