@@ -21,12 +21,15 @@ export default class Footer extends React.Component {
   }
 
   handleScroll(event) {
-    let distance = event.srcElement.body.scrollTop;
-    if (distance < 1000 && this.state.isHidden === false) {
+    let scroll = event.srcElement.body.scrollTop;
+    let distance = document.querySelector('#splashpage_').offsetHeight;
+    let offset = distance - scroll;
+
+    if (offset > 0 && this.state.isHidden === false) {
       this.setState({
         isHidden: true,
       });
-    } else if (distance > 1000 && this.state.isHidden === true){
+    } else if (offset < 0 && this.state.isHidden === true){
       this.setState({
         isHidden: false,
       });
