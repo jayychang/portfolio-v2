@@ -5,6 +5,59 @@
     <title></title>
   </head>
   <body>
+    <div id="loadingScreen_" style="height: 100vh; width: 100vw">
+      <div class="svg-container" style="left: 20%">
+        <svg class="svg spin" height="90px" width="90px">
+          <polygon points="33 3, 57 3, 57 33, 87 33, 87 57, 57 57, 57 87, 33 87, 33 57, 3 57, 3 33, 33 33" stroke-width="6" stroke="#F86CB7" fill="transparent" />
+        </svg>
+      </div>
+      <div class="svg-container" style="left: 40%">
+        <svg class="svg" height="90px" width="90px">
+          <circle cx="50%" cy="50%" r="42px" stroke-width="6px" stroke="#AE84FC" fill="transparent" />
+        </svg>
+      </div>
+      <div class="svg-container" style="left: 60%">
+        <svg class="svg spin" height="103px" width="90px">
+          <polygon points="6 73, 84 73, 45 6" stroke-width="6" stroke="#63B1F7" fill="transparent" />
+        </svg>
+      </div>
+      <div class="svg-container" style="left: 80%">
+        <svg class="svg spin" height="90px" width="90px">
+          <rect x="3" y="3" height="84px" width="84px" stroke-width="6px" stroke="#F5D023" fill="transparent" />
+        </svg>
+      </div>
+      <style type="text/css" style="display: none">
+        #loadingScreen_ {
+          position: fixed;
+          background-color: white;
+          opacity: 1;
+          z-index: 9999;
+          -webkit-transition: opacity cubic-bezier(.4, 0, .2, 1) 450ms;
+          -moz-transition: opacity cubic-bezier(.4, 0, .2, 1) 450ms;
+          transition: opacity cubic-bezier(.4, 0, .2, 1) 450ms;
+        }
+
+        #loadingScreen_.on {
+          opacity: 0;
+        }
+
+        .svg-container {
+          position: absolute;
+          top: 50%;
+          transform: translate(-50%, -50%);
+        }
+
+        .spin {
+          -webkit-animation: spin 4s linear infinite;
+          -moz-animation: spin 4s linear infinite;
+          animation: spin 4s linear infinite;
+        }
+
+        @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+        @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+        @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+      </style>
+    </div>
     <div id="root" />
   </body>
 </html>
