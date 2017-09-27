@@ -1,5 +1,5 @@
 import React from 'react';
-import SplashPage from 'Views/SplashPage.jsx';
+import SplashPage from 'Layouts/SplashPage.jsx';
 import Content from 'Layouts/Content.jsx';
 import Footer from 'Views/Footer.jsx';
 
