@@ -21,7 +21,7 @@ export default class Footer extends React.Component {
   }
 
   handleScroll(event) {
-    let scroll = event.srcElement.body.scrollTop;
+    let scroll = document.documentElement.scrollTop || document.body.scrollTop;
     let distance = document.querySelector('#splashpage_').offsetHeight;
     let offset = distance - scroll;
 
