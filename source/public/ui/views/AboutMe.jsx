@@ -6,7 +6,6 @@ export default class AboutMe extends React.Component {
     const styles = {
       'height': '1000px',
       'width': '100%',
-      'backgroundColor': 'pink',
     }
 
     return (

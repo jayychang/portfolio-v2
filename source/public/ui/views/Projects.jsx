@@ -1,19 +1,17 @@
 import React from 'react';
 import { Element } from 'react-scroll';
+import 'Styles/projects.less';
 
 export default class Projects extends React.Component {
   render() {
-    const styles = {
-      'height': '1000px',
-      'width': '100%',
-      'backgroundColor': 'green',
-    }
-
     return (
-      <section id="projects">
-        <Element style={styles} name="Projects">
-          Projects
+      <section id="projects_">
+        <Element name="Projects">
+          <div style={{height: '1000px'}}>
+            Projects
+          </div>
         </Element>
+        <div className="bottom-gradient" />
       </section>
     );
   }

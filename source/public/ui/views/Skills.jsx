@@ -6,7 +6,7 @@ export default class Skills extends React.Component {
     const styles = {
       'height': '1000px',
       'width': '100%',
-      'backgroundColor': 'orange',
+      'backgroundColor': '#f7f7f7',
     }
 
     return (

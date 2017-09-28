@@ -5,7 +5,7 @@ import Projects from 'Views/Projects.jsx';
 import Skills from 'Views/Skills.jsx';
 import AboutMe from 'Views/AboutMe.jsx';
 import { scrollSpy } from 'react-scroll';
-import 'Styles/grid.less';
+import 'Styles/content.less';
 
 export default class Content extends React.Component {
   componentDidMount() {

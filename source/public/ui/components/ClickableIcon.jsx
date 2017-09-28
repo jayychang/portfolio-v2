@@ -3,10 +3,10 @@ import React from 'react';
 export default class ClickableIcon extends React.Component {
   constructor(props) {
     super(props);
-    this.openNew = this.openNew.bind(this);
+    this.openLink = this.openLink.bind(this);
   }
 
-  openNew() {
+  openLink() {
     const link = this.props.url;
     if (/^mailto:/.test(link)) {
       window.location = link;
@@ -23,7 +23,7 @@ export default class ClickableIcon extends React.Component {
     }
 
     return (
-      <img style={styles} onClick={this.openNew} src={this.props.icon} />
+      <img style={styles} onClick={this.openLink} src={this.props.icon} />
     );
   }
 }
