@@ -8,11 +8,13 @@ export default class Skills extends React.Component {
       'width': '100%',
       'backgroundColor': 'orange',
     }
-    
+
     return (
-      <Element style={styles} name="Skills">
-        Skill
-      </Element>
+      <section id="skills_">
+        <Element style={styles} name="Skills">
+          Skill
+        </Element>
+      </section>
     );
   }
 }

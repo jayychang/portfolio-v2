@@ -8,11 +8,13 @@ export default class AboutMe extends React.Component {
       'width': '100%',
       'backgroundColor': 'pink',
     }
-    
+
     return (
-      <Element style={styles} name="AboutMe">
-        aboutMe
-      </Element>
+      <section id="aboutme_">
+        <Element style={styles} name="AboutMe">
+          aboutMe
+        </Element>
+      </section>
     );
   }
 }

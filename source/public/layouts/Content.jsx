@@ -16,12 +16,12 @@ export default class Content extends React.Component {
     return (
       <div id="content_">
         <NavBar />
-        <div className="main_content">
+        <main className="main_content">
           <Work />
           <Projects />
           <Skills />
           <AboutMe />
-        </div>
+        </main>
       </div>
     );
   }

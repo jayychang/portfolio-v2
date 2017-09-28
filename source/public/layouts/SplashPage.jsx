@@ -17,14 +17,14 @@ export default class SplashPage extends React.Component {
 
   render() {
     return (
-      <div id="splashpage_" onClick={this.scrollToNav}>
+      <header id="splashpage_" onClick={this.scrollToNav}>
         <div className="splash sticky_aligner">
           <div className="sticky_content">
             <ScrollTyper />
             <ScrollArrow />
           </div>
         </div>
-      </div>
+      </header>
     );
   }
 }

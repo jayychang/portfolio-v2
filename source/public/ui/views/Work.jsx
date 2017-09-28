@@ -9,14 +9,16 @@ export default class Work extends React.Component {
     }
 
     return (
-      <Element style={styles} name="Work">
-        <div className="work-container">
-          <div className="item"/>
-          <div className="item"/>
-          <div className="item"/>
-          <div className="item"/>
-        </div>
-      </Element>
+      <section id="work_">
+        <Element style={styles} name="Work">
+          <div className="work-container">
+            <div className="item"/>
+            <div className="item"/>
+            <div className="item"/>
+            <div className="item"/>
+          </div>
+        </Element>
+      </section>
     );
   }
 }

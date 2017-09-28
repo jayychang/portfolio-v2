@@ -10,9 +10,11 @@ export default class Projects extends React.Component {
     }
 
     return (
-      <Element style={styles} name="Projects">
-        Projects
-      </Element>
+      <section id="projects">
+        <Element style={styles} name="Projects">
+          Projects
+        </Element>
+      </section>
     );
   }
 }
