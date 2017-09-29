@@ -2,22 +2,24 @@
   position: relative;
   background-color: white;
 
-  > .top-gradient {
+  & > .top-gradient {
     position: absolute;
-    top: 0;
     height: 50px;
-    width: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
     background: -webkit-linear-gradient(#AE84FC, rgba(255,255,255,0));
     background: -o-linear-gradient(#AE84FC, rgba(255,255,255,0));
     background: -moz-linear-gradient(#AE84FC, rgba(255,255,255,0));
     background: linear-gradient(#AE84FC, rgba(255,255,255,0));
   }
 
-  > .bottom-gradient {
+  & > .bottom-gradient {
     position: absolute;
-    bottom: 0;
     height: 50px;
-    width: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
     background: -webkit-linear-gradient(rgba(255,255,255,0), #AE84FC);
     background: -o-linear-gradient(rgba(255,255,255,0), #AE84FC);
     background: -moz-linear-gradient(rgba(255,255,255,0), #AE84FC);

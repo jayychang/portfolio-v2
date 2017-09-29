@@ -20,7 +20,6 @@ export default @observer class ScrollTyper extends React.Component {
   }
 
   handleScroll(event) {
-
     let scroll = document.documentElement.scrollTop || document.body.scrollTop;
 
     if (scroll <= 90) {
@@ -125,7 +124,7 @@ export default @observer class ScrollTyper extends React.Component {
 
   render() {
     return (
-      <div className="scroll-typer-container">
+      <div className="scroll-typer">
         {this.string}<span className="scroll-typer-cursor">|</span>
       </div>
     );

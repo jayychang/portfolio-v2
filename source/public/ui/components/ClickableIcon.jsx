@@ -17,9 +17,9 @@ export default class ClickableIcon extends React.Component {
 
   render() {
     const styles = {
-      'height': '64px',
-      'margin': 'auto',
-      'cursor': 'pointer',
+      height: '64px',
+      margin: 'auto',
+      cursor: 'pointer',
     }
 
     return (

@@ -3,10 +3,10 @@ import React from 'react';
 export default class ScrollArrow extends React.Component {
   render() {
     const styles = {
-      'position': 'absolute',
-      'bottom': '50px',
-      'left': '50%',
-      'transform': 'translateX(-50%)',
+      position: 'absolute',
+      bottom: '50px',
+      left: '50%',
+      transform: 'translateX(-50%)',
     }
 
     return (

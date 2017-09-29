@@ -6,10 +6,10 @@ import ScrollArrow from 'Components/ScrollArrow.jsx';
 
 export default class SplashPage extends React.Component {
   scrollToNav() {
-    let navbarDistance = document.querySelector('#navbar_').getBoundingClientRect().top;
-    let navbarHeight = document.querySelector('#navbar_').clientHeight;
-    let screenHeight = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
-    let difference = navbarDistance + navbarHeight - screenHeight;
+    const navbarDistance = document.querySelector('#navbar_').getBoundingClientRect().top;
+    const navbarHeight = document.querySelector('#navbar_').clientHeight;
+    const screenHeight = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+    const difference = navbarDistance + navbarHeight - screenHeight;
     if (difference > 0) {
       animateScroll.scrollMore(difference);
     }
@@ -18,8 +18,8 @@ export default class SplashPage extends React.Component {
   render() {
     return (
       <header id="splashpage_" onClick={this.scrollToNav}>
-        <div className="splash sticky_aligner">
-          <div className="sticky_content">
+        <div className="splash sticky-aligner">
+          <div className="sticky-content">
             <ScrollTyper />
             <ScrollArrow />
           </div>

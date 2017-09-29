@@ -4,8 +4,9 @@ import { Link } from 'react-scroll';
 export default class Navigation extends React.Component {
   render() {
     const styles = {
-      'height': '100%',
-      'width': '100%',
+      height: '100%',
+      width: '100%',
+      zIndex: '990',
     }
 
     return (

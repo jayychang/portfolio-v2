@@ -1,17 +1,18 @@
 import React from 'react';
+import FadeContainer from 'Components/FadeContainer.jsx';
 import { Element } from 'react-scroll';
+import 'Styles/aboutme.less';
 
 export default class AboutMe extends React.Component {
   render() {
-    const styles = {
-      'height': '1000px',
-      'width': '100%',
-    }
-
     return (
       <section id="aboutme_">
-        <Element style={styles} name="AboutMe">
-          aboutMe
+        <Element name="AboutMe" style={{minHeight: '100vh'}}>
+          <FadeContainer fadeBottom={false}>
+            <div style={{height: '1000px', backgroundColor: 'red'}}>
+              aboutme
+            </div>
+          </FadeContainer>
         </Element>
       </section>
     );

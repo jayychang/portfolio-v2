@@ -16,7 +16,7 @@ export default class Content extends React.Component {
     return (
       <div id="content_">
         <NavBar />
-        <main className="main_content">
+        <main id="main-content_">
           <Work />
           <Projects />
           <Skills />

@@ -1,18 +1,18 @@
 import React from 'react';
+import FadeContainer from 'Components/FadeContainer.jsx';
 import { Element } from 'react-scroll'
+import 'Styles/skills.less';
 
 export default class Skills extends React.Component {
   render() {
-    const styles = {
-      'height': '1000px',
-      'width': '100%',
-      'backgroundColor': '#f7f7f7',
-    }
-
     return (
       <section id="skills_">
-        <Element style={styles} name="Skills">
-          Skill
+        <Element name="Skills">
+          <FadeContainer>
+            <div style={{height: '1000px', backgroundColor: 'red'}}>
+              skills
+            </div>
+          </FadeContainer>
         </Element>
       </section>
     );

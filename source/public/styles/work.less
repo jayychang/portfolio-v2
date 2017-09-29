@@ -1,26 +1,32 @@
 #work_ {
-  position: relative;
   background-color: #f7f7f7;
 
-  > .top-gradient {
+  & > .top-gradient {
     position: absolute;
-    top: 0;
     height: 50px;
-    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
     background: -webkit-linear-gradient(#F86CB7, rgba(247,247,247,0));
     background: -o-linear-gradient(#F86CB7, rgba(247,247,247,0));
     background: -moz-linear-gradient(#F86CB7, rgba(247,247,247,0));
     background: linear-gradient(#F86CB7, rgba(247,247,247,0));
   }
 
-  > .bottom-gradient {
+  & > .bottom-gradient {
     position: absolute;
-    bottom: 0;
     height: 50px;
-    width: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
     background: -webkit-linear-gradient(rgba(247,247,247,0), #F86CB7);
     background: -o-linear-gradient(rgba(247,247,247,0), #F86CB7);
     background: -moz-linear-gradient(rgba(247,247,247,0), #F86CB7);
     background: linear-gradient(rgba(247,247,247,0), #F86CB7);
+  }
+
+  .content-item {
+    height: 330px;
+    width: 330px;
   }
 }

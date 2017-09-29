@@ -7,11 +7,12 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  color: white;
-  z-index: 990;
+  z-index: 990 !important;
 
   .navItem {
     cursor: pointer;
+    color: white !important;
+    font-weight: normal;
     margin: 0;
     opacity: 0.7;
     font-size: 30px;
@@ -29,11 +30,11 @@
   }
 }
 
-.nav.sticky_aligner {
+.nav.sticky-aligner {
   z-index: 990;
 }
 
-.main_content {
+#main-content_ {
   padding-top: @navbarHeight;
   width: 100%;
 }
