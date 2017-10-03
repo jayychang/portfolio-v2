@@ -10,7 +10,7 @@ export default (
     {
       image: require('Assets/images/kudolife-bg.jpg'),
       logo: require('Assets/images/prizmmedia-logo.png'),
-      url: 'http://www.kudolife.com',
+      url: 'https://www.prizmmedia.com',
       company: 'Prizm Media',
       job: 'Junior Software Developer',
     },

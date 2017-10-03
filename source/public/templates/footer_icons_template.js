@@ -9,7 +9,7 @@ export default (
       icon: require('Assets/icons/linkedin-icon.png'),
     },
     {
-      url: 'mailto:jaychanggg@gmail.com',
+      url: 'mailto:jaychanggg@gmail.com?body=Hope you enjoyed visiting my website, feel free to contact me',
       icon: require('Assets/icons/email-icon.png'),
     },
   ]

@@ -20,6 +20,8 @@
     -ms-transition: margin 700ms, font 500ms, opacity 500ms;
     -moz-transition: margin 700ms, font 500ms, opacity 500ms;
     transition: margin 700ms, font 500ms, opacity 500ms;
+    -webkit-backface-visibility: hidden;
+    -webkit-transform-style: preserve-3d;
 
     &.inView {
       font-weight: bold !important;
@@ -32,9 +34,4 @@
 
 .nav.sticky-aligner {
   z-index: 990;
-}
-
-#main-content_ {
-  padding-top: @navbarHeight;
-  width: 100%;
 }

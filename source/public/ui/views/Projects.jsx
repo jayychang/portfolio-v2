@@ -10,7 +10,7 @@ export default class Projects extends React.Component {
         <Element name="Projects">
           <FadeContainer>
             <div style={{height: '1000px'}}>
-              Projects
+              Work & Projects
             </div>
           </FadeContainer>
         </Element>

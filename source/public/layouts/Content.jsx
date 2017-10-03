@@ -1,6 +1,6 @@
 import React from 'react';
 import NavBar from 'Components/NavBar.jsx';
-import Work from 'Views/Work.jsx';
+import Experience from 'Views/Experience.jsx';
 import Projects from 'Views/Projects.jsx';
 import Skills from 'Views/Skills.jsx';
 import AboutMe from 'Views/AboutMe.jsx';
@@ -17,7 +17,7 @@ export default class Content extends React.Component {
       <div id="content_">
         <NavBar />
         <main id="main-content_">
-          <Work />
+          <Experience />
           <Projects />
           <Skills />
           <AboutMe />
