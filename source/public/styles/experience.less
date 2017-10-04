@@ -1,5 +1,5 @@
 #experience_ {
-  background-color: #f7f7f7;
+  background-color: white;
 
   & > .top-gradient {
     position: absolute;
@@ -25,8 +25,44 @@
     background: linear-gradient(rgba(247,247,247,0), #F86CB7);
   }
 
-  .content-item {
+  .experience-grid {
+    height: 100%;
+    max-width: 800px;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+
+    & > div {
+      margin: 20px;
+    }
+  }
+
+  .experience-item {
+    overflow: hidden;
+    position: relative;
     height: 330px;
     width: 330px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 0 5px #dddddd;
+    background-color: white;
+    cursor: pointer;
+
+    .experience-item-logo {
+      position: absolute;
+      background: rgba(255, 255, 255, 0.8);
+      bottom: -100%;
+      max-height: 35%;
+      width: 100%;
+      transition: bottom 0.35s ease;
+    }
+
+    &:hover {
+      .experience-item-logo {
+        bottom: 0;
+      }
+    }
   }
 }

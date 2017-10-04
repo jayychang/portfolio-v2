@@ -8,7 +8,7 @@ export default (
       job: 'Software Developer',
     },
     {
-      image: require('Assets/images/kudolife-bg.jpg'),
+      image: require('Assets/images/prizmmedia-bg.jpg'),
       logo: require('Assets/images/prizmmedia-logo.png'),
       url: 'https://www.prizmmedia.com',
       company: 'Prizm Media',
