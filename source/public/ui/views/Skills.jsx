@@ -2,6 +2,7 @@ import React from 'react';
 import FadeContainer from 'Components/FadeContainer.jsx';
 import { Element } from 'react-scroll'
 import 'Styles/skills.less';
+import Icon from 'Components/IconRandomlyMove.jsx';
 
 export default class Skills extends React.Component {
   render() {
@@ -9,8 +10,25 @@ export default class Skills extends React.Component {
       <section id="skills_">
         <Element name="Skills">
           <FadeContainer>
-            <div style={{height: '1000px', backgroundColor: 'red'}}>
-              skills
+            <div style={{position: 'relative', height: '1000px', backgroundColor: 'red', margin: '100px'}}>
+              <Icon />
+              <Icon />
+              <Icon />
+              <Icon />
+              <Icon />
+              <Icon />
+              <Icon />
+              <Icon />
+              <Icon />
+              <Icon />
+              <Icon />
+              <Icon />
+              <Icon />
+              <Icon />
+              <Icon />
+              <Icon />
+              <Icon />
+              <Icon />
             </div>
           </FadeContainer>
         </Element>
