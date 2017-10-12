@@ -11,10 +11,10 @@ export default class Navigation extends React.Component {
 
     return (
       <div style={styles} className="flex-container">
-        <Link to="Experience" activeClass="inView" smooth={true} duration={500} spy={true} spy={true} offset={-80} className="flex-item navItem">Experience</Link>
-        <Link to="Projects" activeClass="inView" smooth={true} duration={500} spy={true} offset={-80} className="flex-item navItem">Work & Projects</Link>
-        <Link to="Skills" activeClass="inView" smooth={true} duration={500} spy={true} offset={-80} className="flex-item navItem">Skills</Link>
-        <Link to="AboutMe" activeClass="inView" smooth={true} duration={500} spy={true} offset={-80} className="flex-item navItem">About Me</Link>
+        <Link to="Experience" activeClass="inView" smooth={true} duration={500} spy={true} spy={true} offset={-80} duration={700} className="flex-item navItem">Experience</Link>
+        <Link to="Projects" activeClass="inView" smooth={true} duration={500} spy={true} offset={-80} duration={700} className="flex-item navItem">Work & Projects</Link>
+        <Link to="Skills" activeClass="inView" smooth={true} duration={500} spy={true} offset={-80} duration={700} className="flex-item navItem">Skills</Link>
+        <Link to="AboutMe" activeClass="inView" smooth={true} duration={500} spy={true} offset={-80} duration={700} className="flex-item navItem">About Me</Link>
       </div>
     );
   }

@@ -1,9 +1,11 @@
 @navbarHeight: 80px;
 
 #navbar_ {
-  z-index: 9999 !important;
   position: absolute;
   top: 0 !important;
+  left: 0 !important;
+  z-index: 9999;
+  position: relative;
   height: @navbarHeight;
   width: 100vw;
   background-image: url('../assets/images/clouds.jpg');
@@ -13,7 +15,7 @@
 
   .navItem {
     cursor: pointer;
-    color: white !important;
+    color: white;
     font-weight: normal;
     margin: 0;
     opacity: 0.7;
@@ -21,10 +23,10 @@
     transform-style: preserve-3d;
     -webkit-backface-visibility: hidden;
     -webkit-transform-style: preserve-3d;
-    -webkit-transition: all 500ms;
-    -ms-transition: all 500ms;
-    -moz-transition: all 500ms;
-    transition: all 500ms;
+    -webkit-transition: font 500ms, opacity 500ms,margin 500ms;
+    -ms-transition: font 500ms, opacity 500ms,margin 500ms;
+    -moz-transition: font 500ms, opacity 500ms,margin 500ms;
+    transition: font 500ms, opacity 500ms,margin 500ms;
 
     &.inView {
       font-weight: bold !important;
@@ -37,8 +39,4 @@
 
 .nav.sticky-aligner {
   z-index: 9990;
-}
-
-#main-content_ {
-  padding-top: @navbarHeight;
 }

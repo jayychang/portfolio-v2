@@ -45,5 +45,8 @@ export default (
     {
       icon: require('Assets/icons/bash-icon.png')
     },
+    {
+      icon: require('Assets/icons/wordpress-icon.png')
+    },
   ]
 )
