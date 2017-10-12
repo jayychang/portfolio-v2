@@ -1,13 +1,15 @@
 @navbarHeight: 80px;
 
 #navbar_ {
+  z-index: 9999 !important;
+  position: absolute;
+  top: 0 !important;
   height: @navbarHeight;
   width: 100vw;
   background-image: url('../assets/images/clouds.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  z-index: 9990 !important;
 
   .navItem {
     cursor: pointer;
@@ -35,4 +37,8 @@
 
 .nav.sticky-aligner {
   z-index: 9990;
+}
+
+#main-content_ {
+  padding-top: @navbarHeight;
 }
