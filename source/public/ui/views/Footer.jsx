@@ -18,7 +18,7 @@ class FooterContent extends React.Component {
     return (
       <div className="footer-content">
         <div className="flex-container">
-          { icons.map((icon, i) =>
+          {icons.map((icon, i) =>
             <ClickableIcon key={i} url={icon.url} icon={icon.icon} size="320px" />
           )}
         </div>

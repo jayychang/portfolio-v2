@@ -4,7 +4,7 @@
   .skill-icon-container {
     position: relative;
     height: 300px;
-    margin: 10px 160px 140px 160px;
+    margin: 10px 160px 100px 160px;
 
     > img {
       -webkit-filter: drop-shadow(1px 1px 0 white)
@@ -16,6 +16,21 @@
               drop-shadow(-1px 1px 0 white)
               drop-shadow(1px -1px 0 white)
               drop-shadow(-1px -1px 0 white);
+    }
+  }
+
+  .skills-grid {
+    height: 100%;
+    max-width: 1100px;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+
+    & > div {
+      width: 300px;
+      margin: 20px;
     }
   }
 }

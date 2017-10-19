@@ -32,8 +32,8 @@ export default class ProjectItem extends React.Component {
       <div style={container} className="project-item" onClick={this.openLink}>
         <img src={this.props.image} style={{height: '100%'}} />
         <div className="project-item-hover" style={{minHeight: '100px'}}>
-          <div style={title}>{this.props.title}</div>
-          <div style={description}>{this.props.description}</div>
+          <p style={title}>{this.props.title}</p>
+          <p style={description}>{this.props.description}</p>
         </div>
       </div>
     );
